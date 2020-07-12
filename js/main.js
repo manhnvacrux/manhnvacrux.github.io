@@ -1,8 +1,8 @@
 /*
-	Name: unRovr
+	Name: manhnv
 	Description: Responsive HTML5 vCard Template
 	Version: 1.0
-	Author: pixelwars
+	Author: manhnv
 */
 
 
