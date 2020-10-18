@@ -1,4 +1,5 @@
-@import '../../../../codyhouse-framework/main/assets/css/style.scss'; // ⚠️ make sure to import the CodyHouse framework
+@import '../../../../codyhouse-framework/main/assets/css/style.scss';
+// ⚠️ make sure to import the CodyHouse framework
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'); // custom font
 
 // --------------------------------
@@ -9,10 +10,10 @@
 
 :root {
   // colors
-  @include defineColorHSL(--cd-color-1, 213, 7%, 33%);   // Blue Dark
-  @include defineColorHSL(--cd-color-2, 73, 46%, 55%);   // Green
-  @include defineColorHSL(--cd-color-3, 210, 14%, 49%);  // Blue Light
-  @include defineColorHSL(--cd-color-4, 0, 0%, 100%);    // White
+  @include defineColorHSL(--cd-color-1, 213, 7%, 33%); // Blue Dark
+  @include defineColorHSL(--cd-color-2, 73, 46%, 55%); // Green
+  @include defineColorHSL(--cd-color-3, 210, 14%, 49%); // Blue Light
+  @include defineColorHSL(--cd-color-4, 0, 0%, 100%); // White
 
   // font
   --font-primary: 'Open Sans', sans-serif;
@@ -30,31 +31,31 @@
     text-decoration: none;
   }
 
-	@include breakpoint(md) {
-		position: relative;
-		box-shadow: none;
+  @include breakpoint(md) {
+    position: relative;
+    box-shadow: none;
     display: flex;
 
     &::before {
       content: 'desktop';
     }
-	}
+  }
 }
 
 .cd-faq__categories {
-	@include breakpoint(md) {
+  @include breakpoint(md) {
     position: sticky; // fix element on scrolling
     align-self: flex-start;
     flex-shrink: 0;
     top: 20px;
-		width: 20%;
-		box-shadow: var(--shadow-sm);
+    width: 20%;
+    box-shadow: var(--shadow-sm);
     margin-top: var(--space-md);
-	}
+  }
 
-	@include breakpoint(lg) {
-		width: 200px;
-	}
+  @include breakpoint(lg) {
+    width: 200px;
+  }
 }
 
 .cd-faq__category {
@@ -62,11 +63,11 @@
   display: block;
   height: 50px;
   line-height: 50px;
-  padding: 0 var(--space-lg) 0 calc(var(--space-sm)*1.4);
+  padding: 0 var(--space-lg) 0 calc(var(--space-sm) * 1.4);
   color: var(--cd-color-4);
   background-color: var(--cd-color-1);
   @include fontSmooth;
-  --border-color: hsl(var(--cd-color-1-h), var(--cd-color-1-s), calc(var(--cd-color-1-l)*1.1));
+  --border-color: hsl(var(--cd-color-1-h), var(--cd-color-1-s), calc(var(--cd-color-1-l) * 1.1));
   border-bottom: 1px solid var(--border-color);
 
   &::before, &::after { // plus icon on the right
@@ -133,30 +134,30 @@
 }
 
 .cd-faq__items { // on mibile, faq contents slides in from the right
-	position: fixed;
+  position: fixed;
   z-index: 1;
-	height: 100%;
-	width: 90%;
-	top: 0;
-	right: 0;
-	background: var(--cd-color-4);
-	padding: 0 var(--component-padding) var(--space-md);
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	backface-visibility: hidden;
-	transform: translateZ(0) translateX(100%);
-	transition: transform .3s;
+  height: 100%;
+  width: 90%;
+  top: 0;
+  right: 0;
+  background: var(--cd-color-4);
+  padding: 0 var(--component-padding) var(--space-md);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  backface-visibility: hidden;
+  transform: translateZ(0) translateX(100%);
+  transition: transform .3s;
 
-	@include breakpoint(md) {
-		position: static;
-		height: auto;
-		width: auto;
+  @include breakpoint(md) {
+    position: static;
+    height: auto;
+    width: auto;
     flex-grow: 1;
-		overflow: visible;
-		transform: translateX(0);
-		padding: 0 0 0 var(--space-sm);
-		background: transparent;
-	}
+    overflow: visible;
+    transform: translateX(0);
+    padding: 0 0 0 var(--space-sm);
+    background: transparent;
+  }
 }
 
 .cd-faq__items--slide-in {
@@ -171,12 +172,12 @@ html:not(.js) .cd-faq__items {
 }
 
 .cd-faq__group {
-	display: none; // hide group not selected
+  display: none; // hide group not selected
 
-	@include breakpoint(md) { // all groups visible
-		display: block;
+  @include breakpoint(md) { // all groups visible
+    display: block;
     padding-top: 1px; // fix issue with collapsing margin
-	}
+  }
 }
 
 html:not(.js) .cd-faq__group,
@@ -196,7 +197,7 @@ html:not(.js) .cd-faq__group,
 
   @include breakpoint(md) {
     margin-bottom: var(--space-sm);
-    
+
     h2 {
       font-size: var(--text-xs);
     }
@@ -206,7 +207,7 @@ html:not(.js) .cd-faq__group,
 .cd-faq__item {
   @include breakpoint(md) {
     background: var(--cd-color-4);
-    margin-bottom: var(--space-xxxs); 
+    margin-bottom: var(--space-xxxs);
     box-shadow: 0 1px 2px rgba(#000, .08);
     transition: box-shadow .2s;
 
@@ -271,7 +272,7 @@ html:not(.js) .cd-faq__group,
   .text-component {
     font-size: 0.95em;
   }
-  
+
   p {
     color: var(--cd-color-3);
   }
@@ -280,7 +281,7 @@ html:not(.js) .cd-faq__group,
     display: none;
     padding: 0 var(--space-sm);
     overflow: hidden;
-    
+
     .text-component {
       font-size: 0.75em;
       padding-bottom: var(--space-md);
