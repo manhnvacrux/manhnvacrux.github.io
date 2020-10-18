@@ -3962,7 +3962,7 @@ body {
 }
 
 .cd-header {
-    --header-height: 180px;
+    --header-height: 120px;
     height: 180px;
     height: var(--header-height);
     background-color: #2196F3;
@@ -3970,7 +3970,7 @@ body {
 
 @media (min-width: 80rem) {
     .cd-header {
-        height: 240px;
+        height: 120px;
         height: var(--header-height)
     }
 }
@@ -3987,7 +3987,7 @@ body {
 
 @media (min-width: 80rem) {
     .cd-header {
-        --header-height: 240px
+        --header-height: 120px
     }
 }
 
