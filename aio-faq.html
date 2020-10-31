@@ -36,19 +36,112 @@
                    href="#0"><span>Network Information</span></a>
                 <div class="cd-faq__content">
                     <div class="text-component">
-                        android.permission.ACCESS_WIFI_STATE; 
-                        android.permission.INTERNET ;
-                        All-In-One Toolbox needs access to the network to receive upgrades for the app as well as the
+                        android.permission.ACCESS_WIFI_STATE;<br>
+                        android.permission.INTERNET;<br>
+                        AIO Toolbox needs access to the network to receive upgrades for the app as well as the
                         plugins.
                     </div>
                 </div> <!-- cd-faq__content -->
             </li>
             <li class="cd-faq__item">
                 <a class="cd-faq__trigger"
-                   href="#0"><span>2do</span></a>
+                   href="#0"><span>Configuration</span></a>
                 <div class="cd-faq__content">
                     <div class="text-component">
-                        2do
+                        android.permission.CHANGE_CONFIGURATION<br>
+                        This permission is required because AIO Toolbox has the feature to mute the boot sound, and
+                        change language of the app; it is mainly used for change of locale.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>Cache</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        android.permission.CLEAR_APP_CACHE<br>
+                        Android.permission.GET_PACKAGE_SIZE<br>
+                        Cache cleaner under System Cleaner requires this permission to calculate the size of the cache
+                        files, and also the clear of cache.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>Get Task</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        MOUNT_UNMOUNT_FILESYSTEMS<br>
+                        Task Killer requires this permission to check the currently or recently running tasks: a
+                        thumbnail representation of the tasks, what activities are running in it, etc.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>System File</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        android.permission.GET_TASKS<br>
+                        System App Uninstall feature requires this permission to refresh and save the system app list.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>Storage</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        permission.READ_EXTERNAL_STORAGE<br>
+                        This is required by Backup and Restore and System App Uninstall. It needs to calculate the size
+                        and also save all the changes made.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>Phone Storage</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        permission.READ_PHONE_STATE<br>
+                        The app needs this permission so it will not kill dialer or other processes related to the phone
+                        call, and not to interrupt the phone call.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>Set Orientation</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        android.SET_ORIENTATION<br>
+                        The app does not support landscape view now, and only portrait view is available, so it needs to
+                        set the orientation back to landscape view when you are using the app.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>Boot Time
+</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        RECEIVE_BOOT_COMPLETED<br>
+                        This is required by Show Boot Time feature. It needs this access to calculate boot time and show
+                        it on the Notification bar at each boot.
+                    </div>
+                </div> <!-- cd-faq__content -->
+            </li>
+            <li class="cd-faq__item">
+                <a class="cd-faq__trigger"
+                   href="#0"><span>Package</span></a>
+                <div class="cd-faq__content">
+                    <div class="text-component">
+                        permission.RESTART_PACKAGES<br>
+                        Kill running apps and reclaim the memory used by those apps.<br>
+                        To summarize, AIO Toolbox will not ask for permission that is not used or needed. At AIO
+                        Toolbox Inc., we do not collect any information from users. We would strive to safe guard all
+                        the information we have access to, and respect all users’ rights on privacy.
                     </div>
                 </div> <!-- cd-faq__content -->
             </li>
